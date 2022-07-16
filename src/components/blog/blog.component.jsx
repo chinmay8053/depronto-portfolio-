@@ -4,6 +4,7 @@ import "./blog.style.scss";
 
 function Blog() {
   const [posts, setPosts] = useState([]);
+  const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
     const Posts = async () => {
@@ -14,18 +15,17 @@ function Blog() {
     Posts();
   }, []);
 
-  const popup = (id) => {
-    console.log(id);
+  const popup = async (id) => {
+    const res = await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`);
+    const data = await res.data;
+    setHidden(data);
   };
+  console.log(hidden);
   return (
     <div className="BLOG">
       <h1 className="blog-title">BLOG POSTS</h1>
       <div className="out-blog">
         <div className="in-blog">
-          {/* <div className="cards">
-            <h3 className="card-title">sunt aut facere repellat provident occaecati excepturi optio reprehenderit</h3>
-            <p className="card-sub">quia et suscipit\nsuscipit recusandae consequuntur expedita</p>
-          </div> */}
           {posts.map(({ body, id, title }) => {
             return (
               <div className="cards" key={id} onClick={popup.bind(this, id)}>
@@ -35,10 +35,19 @@ function Blog() {
             );
           })}
         </div>
-        {/* <div className="popup">
-          {" "}
-          <div className="popupMenu"></div>
-        </div> */}
+        {hidden ? (
+          <div className="popup">
+            <div className="popupMenu">
+              <div className="data">
+                <h3>{hidden.title}</h3>
+                <p>{hidden.body}</p>
+                <button className="remove" onClick={() => setHidden(false)}>
+                  X
+                </button>
+              </div>
+            </div>
+          </div>
+        ) : null}
       </div>
     </div>
   );

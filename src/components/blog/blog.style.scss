@@ -58,11 +58,46 @@
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.121);
   }
   .popup {
-    width: 1000px;
-    height: 100px;
     position: absolute;
-    background-color: aqua;
   }
   .popupMenu {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.886);
+    position: fixed;
+    z-index: 98;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .data {
+    color: white;
+    h3 {
+      padding-bottom: 30px;
+    }
+    p {
+      color: #ddd;
+      line-height: 2;
+    }
+  }
+  .remove {
+    font-size: 32px;
+    font-weight: 900;
+    position: absolute;
+    background-color: rgb(123, 122, 120);
+    width: 90%;
+    text-align: center;
+    transform: translateX(-50%);
+    border: none;
+    border-radius: 30px;
+    bottom: 40px;
+    color: black;
   }
 }
