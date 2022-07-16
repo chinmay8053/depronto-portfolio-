@@ -30,7 +30,7 @@ function Blog() {
             return (
               <div className="cards" key={id} onClick={popup.bind(this, id)}>
                 <h3 className="card-title">{title.slice(0, 20)}</h3>
-                <p className="card-sub">{body.slice(0, 40)}</p>
+                <p className="card-sub">{body.slice(0, 40)}...</p>
               </div>
             );
           })}

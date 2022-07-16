@@ -63,7 +63,7 @@
   .popupMenu {
     width: 500px;
     height: 500px;
-    background-color: rgba(0, 0, 0, 0.886);
+    background-color: rgba(42, 40, 40, 0.963);
     position: fixed;
     z-index: 98;
     top: 0;
@@ -74,8 +74,8 @@
     align-items: center;
     padding: 50px;
     text-align: center;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
   }
   .data {
     color: white;
