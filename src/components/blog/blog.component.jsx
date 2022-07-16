@@ -9,7 +9,7 @@ function Blog() {
     const Posts = async () => {
       const res = await axios.get("https://jsonplaceholder.typicode.com/posts");
       const data = await res.data;
-      setPosts(data.slice(0, 15));
+      setPosts(data.slice(0, 16));
     };
     Posts();
   }, []);
@@ -35,10 +35,10 @@ function Blog() {
             );
           })}
         </div>
-        <div className="popup">
+        {/* <div className="popup">
           {" "}
           <div className="popupMenu"></div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

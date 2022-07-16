@@ -1,3 +1,19 @@
-.App {
-  text-align: center;
+.author {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  background-color: rgb(172, 164, 164);
+  justify-content: left;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 70px;
+}
+
+.name {
+  font-weight: 700;
+  padding-left: 10px;
 }

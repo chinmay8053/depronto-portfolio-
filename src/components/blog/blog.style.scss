@@ -3,11 +3,12 @@
   box-sizing: border-box;
   background-color: lightgrey;
   padding-top: 70px;
-  margin-bottom: 1000px;
+  padding-bottom: 50px;
 
   .blog-title {
     font-size: 52px;
     font-weight: 800;
+    text-align: center;
   }
   .out-blog {
     display: flex;
