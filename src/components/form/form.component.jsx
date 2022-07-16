@@ -36,7 +36,7 @@ function FeedbackForm() {
   };
   return (
     <div className="container-form">
-      <h3 className="form-title">Feedback Form</h3>
+      <h3 className="form-title">FEEDBACK FORM</h3>
       <div className="out-form">
         <form onSubmit={submitHandle}>
           <div className="each">
