@@ -20,7 +20,6 @@ function Blog() {
     const data = await res.data;
     setHidden(data);
   };
-  console.log(hidden);
   return (
     <div className="BLOG">
       <h1 className="blog-title">BLOG POSTS</h1>

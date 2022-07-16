@@ -57,8 +57,10 @@
   height: 40px;
   border-radius: 20px;
   letter-spacing: 2px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.096);
 }
-input {
+input,
+textarea {
   border: none;
   border-radius: 5px;
   outline: none;
