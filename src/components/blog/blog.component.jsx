@@ -36,7 +36,7 @@ function Blog() {
         </div>
         {hidden ? (
           <div className="popup">
-            <div className="popupMenu">
+            <div className={`popupMenu `}>
               <div className="data">
                 <h3>{hidden.title}</h3>
                 <p>{hidden.body}</p>

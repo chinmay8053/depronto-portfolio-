@@ -4,13 +4,14 @@
   top: 0;
   z-index: 99;
   width: 100%;
-  background-color: rgb(172, 164, 164);
+  background-color: rgba(172, 164, 164, 0.481);
   justify-content: left;
   display: flex;
   align-items: center;
   font-size: 18px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-left: 70px;
+  backdrop-filter: blur(50px);
 }
 
 .name {
