@@ -34,9 +34,9 @@ function Blog() {
             );
           })}
         </div>
-        {hidden ? (
+        {true ? (
           <div className="popup">
-            <div className={`popupMenu `}>
+            <div className={`popupMenu ${hidden ? "hidden" : ""} `}>
               <div className="data">
                 <h3>{hidden.title}</h3>
                 <p>{hidden.body}</p>
